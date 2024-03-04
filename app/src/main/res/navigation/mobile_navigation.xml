@@ -3,23 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
-
+    app:startDestination="@id/galeriaFragment">
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="pe.edu.idat.appbottonnavigation.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/galeriaFragment"
+        android:name="pe.edu.idat.appbottonnavigation.GaleriaFragment"
+        android:label="fragment_galeria"
+        tools:layout="@layout/fragment_galeria" />
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="pe.edu.idat.appbottonnavigation.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
+        android:id="@+id/notificacionesFragment"
+        android:name="pe.edu.idat.appbottonnavigation.NotificacionesFragment"
+        android:label="fragment_notificaciones"
+        tools:layout="@layout/fragment_notificaciones" />
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="pe.edu.idat.appbottonnavigation.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/principalFragment"
+        android:name="pe.edu.idat.appbottonnavigation.PrincipalFragment"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" />
 </navigation>
